@@ -3,11 +3,11 @@ import { browser, $ } from "@wdio/globals";
 
 Given("I am on Login page", async function(){
     await browser.navigateTo("https://the-internet.herokuapp.com/login");
-    await browser.pause(5000);
+    //await browser.pause(5000);
 });
 When('I enter "tomsmith" username', async function(){
     const usernameInput = await $("#username");
-    usernameInput.setValue("tomsmith");
+    await usernameInput.setValue("tomsmith");
 });
 When('I enter "ahahjdkfm" username', async function() {
     await $("#username").setValue("ahahjdkfm");
@@ -15,16 +15,16 @@ When('I enter "ahahjdkfm" username', async function() {
 
 When('I enter "SuperSecretPassword!" password', async function(){
     const passwordInput = await $("#password");
-    passwordInput.setValue("SuperSecretPassword!");
+    await passwordInput.setValue("SuperSecretPassword!");
 });
 When('I enter "fhjdkld" password', async function() {
     const passwordInput = await $("#password");
-    passwordInput.setValue("fhjdkld");
+    await passwordInput.setValue("fhjdkld");
 });
 
 When('I press on Login button', async function(){
     const button = await $("button[type=submit");
-    button.click();
+    await button.click();
 });
 Then('I see a message "You logged into a secure area!"', async function(){
     const flashMessage = await $("#flash");
