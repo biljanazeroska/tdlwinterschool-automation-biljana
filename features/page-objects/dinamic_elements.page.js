@@ -1,10 +1,3 @@
-// import { Page } from "./page.js";
-
-// class DynamicElementsPage extends Page {
-//     get startButton() { return $("#start button"); }
-// }
-
-// export default new DynamicElementsPage();
 import { Page } from "./page.js";
 
 class DynamicElementsPage extends Page {
@@ -12,3 +5,8 @@ class DynamicElementsPage extends Page {
 }
 
 export default new DynamicElementsPage();
+
+
+
+
+
