@@ -15,5 +15,5 @@ Feature: Login
 
     @negative
     Examples: 
-      | username  | password       | message                     | visibility |
-      | "sdfsadg" | "arhsrtnsrtns" | "Your username is invalid!" | don't      |
+      | username    | password  | message                     | visibility |
+      | "ahahjdkfm" | "fhjdkld" | "Your username is invalid!" | don't      |
